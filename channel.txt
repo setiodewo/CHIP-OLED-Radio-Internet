@@ -1,0 +1,10 @@
+HardRock FM;http://streaming.mramedia.com:8000/hardrock
+SmartFM JKT;http://101.50.0.77:8000/smartfm.aac
+iRadio FM;http://streaming.mramedia.com:8000/iradio
+RPK FM;http://rpkfm.indostreamserver.com:8030
+HeartLine FM;http://202.129.186.43:7010
+Sindo Trijaya;http://202.147.199.101:8000
+Elshinta FM;http://202.137.4.147:8000
+Cosmopolitan;http://61.8.70.166:8000/cosmo-aac
+Trax FM Jkt;http://61.8.70.166:8000/trax-jkt
+Sonora Classic Rock;http://46.105.122.141:6664
