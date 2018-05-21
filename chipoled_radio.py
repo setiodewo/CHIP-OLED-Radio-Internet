@@ -33,7 +33,7 @@ GPIO.setup(_up,   GPIO.IN, pull_up_down=GPIO.PUD_UP)
 GPIO.setup(_down, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 GPIO.setup(_shut, GPIO.IN, pull_up_down=GPIO.PUD_UP)
  
-vol = 50
+vol = 0
 channel_num = 0
 channel_name = "OFF"
  
@@ -52,8 +52,17 @@ def show_radio() :
     draw.text((0,22), channel_name, font=font, fill="white")
  
 def change_volume(nomor) :
+  global _onoff, vol
   subprocess.Popen(["amixer","-c","0","sset","Power Amplifier",str(nomor)+"%"])
-  show_radio()
+  if nomor <= 0 :
+    if _onoff > 0 :
+      _onoff = 0
+      poweronoff(_onoff)
+  else :
+    if _onoff == 0 :
+      _onoff = 1
+      poweronoff(_onoff)
+    show_radio()
  
 def change_channel(nomor) :
     global channel_name, channel_detail, channel_num
@@ -70,10 +79,22 @@ def change_channel(nomor) :
       subprocess.Popen(["mpc", "play"])
       channel_name = channel_detail[0].strip()
       show_radio()
+
+def show_jam() :
+    with canvas(device) as draw:
+      draw.text((0,0), "Radio Internet v1", font=font1, fill="white")
+      draw.text((00,17), datetime.datetime.now().strftime("%H:%M:%S"), font=font2, fill="white")
+      draw.text((0, 51), datetime.datetime.now().strftime("%A, %d/%m/%Y"), font=font1, fill="white")
+
+def poweronoff(onoff) :
+    if onoff == 0 :
+      subprocess.Popen(['mpc','stop',"-q"])
+      subprocess.Popen(['mpc','clear',"-q"])
+    else :
+      change_channel(channel_num)
  
 change_volume(vol)
-change_channel(0)
- 
+
 while True:
   if GPIO.input(_up) == 0 :
     vol += 10
@@ -107,6 +128,9 @@ while True:
     GPIO.cleanup()
     #subprocess.call("sudo poweroff", shell=True)
     exit()
- 
+
+  if _onoff == 0 :
+    show_jam()
+
   time.sleep(0.05)
 GPIO.cleanup()
