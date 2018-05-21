@@ -1,10 +1,31 @@
-HardRock FM;http://streaming.mramedia.com:8000/hardrock
-SmartFM JKT;http://101.50.0.77:8000/smartfm.aac
-iRadio FM;http://streaming.mramedia.com:8000/iradio
-RPK FM;http://rpkfm.indostreamserver.com:8030
-HeartLine FM;http://202.129.186.43:7010
+Prambors Jkt;http://masima.rastream.com/masima-pramborsjakarta?
+GenFM Jkt;http://streaming.sim-indonesia.com:8000/genfm
+HardRock FM;http://cloudstreaming.mramedia.com:8001/live
+Smart FM JKT;http://101.50.0.77:8000/smartfm.aac
+Gajahmada Smrg;http://gajahmada.i.streaming.id:8000/live
+Imelda Smrg;http://111.68.27.245:8020/imeldafm
+KIS Smrg;http://103.28.148.18:8070
+CRadio Smrg;http://111.68.31.150:8000/cradio.mp3
+Idola Smrg;http://111.68.31.150:8000/idolafm.aac
++Ichtus Smrg;http://stream.suararadio.com:8000/ichthusfm_stereo
+Rasika Smrg;http://stream.suararadio.com:8000/rasikafm_mono
+iRadio FM;http://cloudstreaming.mramedia.com:8000/live
++RPK FM;http://rpkfm.indostreamserver.com:8030
++HeartLine FM;http://202.129.186.43:7010
 Sindo Trijaya;http://202.147.199.101:8000
 Elshinta FM;http://202.137.4.147:8000
-Cosmopolitan;http://61.8.70.166:8000/cosmo-aac
-Trax FM Jkt;http://61.8.70.166:8000/trax-jkt
-Sonora Classic Rock;http://46.105.122.141:6664
+Jak FM Jkt;http://streaming1.sim-indonesia.com:8000/jak
+Bahana Jkt;http://live.bahanafm.co.id:8102
+DengerinMusik;http://stream.denger.in:8000/stream?1475311447299.aac
+Nagaswara Jkt;http://bogor.nagaswarafm.com:8088
+Female Jkt;http://masima.rastream.com/masima-femaleradio
+Cosmopolitan;http://cloudstreaming.mramedia.com:8002/live
+Motion Jkt;http://103.226.246.245/kompas-motionjakarta
+Virgin Jkt;http://17573.live.streamtheworld.com/VIRGINRAD_SC
+Retjo Buntung;http://usa.jogjastreamers.com:8000/rbfm456789stereo?
+KR Radio Jogja;http://krradio.myradio.web.id:8888/krradio
+Indika Jkt;http://103.16.199.177:9160/;stream.nsv
++Radio Kasih;http://188.165.240.90:8454/;stream.nsv
+Pas FM Jkt;http://radio.mitra.net.id:8102/;
+Star Radio;http://live.indostreamserver.com:8070/;
+Romansa FM;http://romansafm.onlivestreaming.net:8859/live
